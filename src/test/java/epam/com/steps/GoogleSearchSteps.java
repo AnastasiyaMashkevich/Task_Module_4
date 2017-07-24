@@ -1,14 +1,13 @@
 package epam.com.steps;
 
+
+import epam.com.driver.DriverFactory;
 import epam.com.page.GoogleMainPage;
 import epam.com.page.GoogleSearchResultPage;
+
 import epam.com.util.Config;
-import epam.com.driver.DriverFactory;
 import org.openqa.selenium.WebDriver;
 
-/**
- * Created by anastasiya_mashkevic on 3/17/17.
- */
 public class GoogleSearchSteps {
 
     private WebDriver driver;
