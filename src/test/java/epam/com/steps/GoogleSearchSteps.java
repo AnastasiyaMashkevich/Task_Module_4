@@ -30,6 +30,7 @@ public class GoogleSearchSteps {
         return googleMainPage.isNeedPageOpen();
     }
 
+
     public boolean isCorrectSearch ()
     {
         GoogleMainPage googleMainPage = new GoogleMainPage(driver);

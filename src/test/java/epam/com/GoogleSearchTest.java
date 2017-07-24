@@ -20,12 +20,13 @@ public class GoogleSearchTest {
         googleSearchSteps.initBrowser();
     }
 
-    @Test
+    @Test (retryAnalyzer = RetryAnalyzer.class)
     public void assertOneCanOpenMainPage () {
         Assert.assertTrue(googleSearchSteps.isOpenPage());
     }
 
-    @Test (retryAnalyzer = RetryAnalyzer.class)
+
+    @Test
     public void assertOneCanTakeCorrectSearchResult () {
         Assert.assertTrue(googleSearchSteps.isCorrectSearch());
     }
